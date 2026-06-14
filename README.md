@@ -35,6 +35,7 @@ com.turizm.kastarehber/
 ├── services/       # Handles background cloud synchronization and data push streams
 └── utils/          # Core algorithms (Haversine Optimizer, Route Engine, Groq API Handlers)
 
+
 👷 Developer & Academic Framework
 Lead Developer: MOHAMMAD ALSULIBI (Student ID: 224410131)
 
@@ -43,3 +44,5 @@ Institution: Kastamonu University
 Faculty: Faculty of Engineering and Architecture | Department of Computer Engineering
 
 Project Advisor: Dr. Öğr. Üyesi Ali Burak ÖNCÜL
+
+
