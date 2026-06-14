@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F6F0"
+    android:paddingTop="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Kastamonu'yu Keşfet"
+            android:textColor="#052012"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etSearchPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_rounded_input"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="12dp"
+        android:drawableTint="#C5A059"
+        android:hint="Yer ara..."
+        android:paddingHorizontal="16dp"
+        android:textColor="#052012"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="16dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingHorizontal="20dp"
+        android:clipToPadding="false"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_btn_light"
+                android:backgroundTint="#052012"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Tümü"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Tarih"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnNature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Doğa"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Yemek"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Alışveriş"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnMountain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Dağcılık"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnMuseum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Müzeler"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnCave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Mağaralar"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/btnCamping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_input"
+                android:textColor="#052012"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Kampçılık" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExplore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp"/>
+</LinearLayout>

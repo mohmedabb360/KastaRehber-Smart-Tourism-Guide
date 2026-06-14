@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="6dp"
+    android:paddingHorizontal="12dp"
+    android:gravity="center_vertical">
+
+    <!-- أيقونة الذكاء الاصطناعي (النجوم) على اليسار -->
+    <ImageView
+        android:id="@+id/imgRobotIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_stars"
+        android:visibility="gone" />
+
+    <!-- نص الرسالة مرن ومستحيل يغطي على الأيقونات -->
+    <TextView
+        android:id="@+id/tvMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:lineSpacingExtra="4dp"
+        android:maxWidth="260dp"
+        android:padding="10dp"
+        android:text="Stream text..." />
+
+    <!-- أيقونة المستخدم (البروفايل) على اليمين تماماً -->
+    <ImageView
+        android:id="@+id/imgUserIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_user_profile"
+        android:visibility="gone" />
+
+</LinearLayout>
