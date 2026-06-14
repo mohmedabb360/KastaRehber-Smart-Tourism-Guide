@@ -95,6 +95,7 @@ com.turizm.kastarehber/
 ├── services/       # Handles background cloud synchronization and data push streams
 └── utils/          # Core algorithms (Haversine Optimizer, Route Engine, Groq API Handlers)
 
+
 🏆 Database Architecture (Firebase Firestore)
 📁 Android Project Structure (Development Output)
 👷 Developer & Academic Framework
